@@ -91,3 +91,10 @@ To start using the models, clone this repository and install the required depend
 git clone https://github.com/SSusantAchary/Hands-On-Huggingface-AI-Models.git
 cd Hands-On-Huggingface-AI-Models
 
+```bibtex
+@misc{Curious Soul,
+    author       = {S Susant Achary},
+    title        = {🤗 Hands-On HuggingFace AI Models},
+    year         = {2025}
+}
+```
