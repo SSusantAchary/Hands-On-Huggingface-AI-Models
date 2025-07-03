@@ -11,7 +11,7 @@ Welcome to **"Hands-On HuggingFace AI Models"**, your go-to repository for explo
 ## 🚀 Interactive Chart
 
 View the interactive Plotly chart here:  
-[👉 Open Interactive Bubble Chart (HTML)](https://github.com/SSusantAchary/Hands-On-Huggingface-AI-Models/blob/main/media/floating.html)
+[👉 Open Interactive Bubble Chart (HTML)](https://SSusantAchary.github.io/Hands-On-Huggingface-AI-Models/blob/main/media/floating.html)
 
 ---
 
