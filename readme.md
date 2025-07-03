@@ -2,6 +2,17 @@
 
 Welcome to **"Hands-On HuggingFace AI Models"**, your go-to repository for exploring, understanding, and leveraging the most popular models from the HuggingFace ecosystem. Whether you're working on NLP, vision, or audio tasks, this repository provides hands-on examples, tutorials, and implementation guides to help you harness the power of HuggingFace models effectively.
 
+## 📊 Bubble Chart Preview
+
+> Bubble size = total downloads.  
+> Bubble color = author’s model count bin (<50, 50–99, …, 10k+).
+![Bubble Chart Preview](https://github.com/SSusantAchary/Hands-On-Huggingface-AI-Models/blob/main/media/popolar_authors.png)
+
+## 🚀 Interactive Chart
+
+View the interactive Plotly chart here:  
+[👉 Open Interactive Bubble Chart (HTML)](https://github.com/SSusantAchary/Hands-On-Huggingface-AI-Models/blob/main/media/floating.html)
+
 ---
 
 ## 📚 Table of Contents
