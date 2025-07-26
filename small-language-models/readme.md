@@ -1,8 +1,27 @@
-# 🗣️ Small Language Model Repository
+# ✨ Small Language Model Repository
 
-Welcome to the **Small Language Model Repository**! This project focuses on building lightweight, domain-specific language models for diverse applications, including multilingual text and audio-based processing.
+Welcome to the **Small Language Model Repository**! This project focuses on building lightweight, domain-specific language models for diverse applications, including multilingual text, Video, audio-based processing and more.
 
 ---
+
+### Overview of Popular Open Models and Formats
+
+This table summarizes leading open-source models with less than 10 billion parameters, focusing on their availability across different optimized formats.
+
+*   **MLX**: For efficient inference on Apple Silicon (M-series chips).
+*   **Unsloth FT (4-bit)**: Optimized for significantly faster fine-tuning with less memory, using 4-bit quantization.
+*   **Unsloth GGUF**: Quantized for fast CPU-based inference and compatibility with tools like Ollama and Llama.cpp.
+
+| Model | Parameter Size | Tasks | Base Version | Fine-tuned / Instruct | MLX (Apple Silicon) | Unsloth FT (4-bit) | Unsloth GGUF | License Type |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Llama 3** | 8B | Text Gen, Chat, Code | [`meta-llama/Llama-3-8B`](https://huggingface.co/meta-llama/Llama-3-8B) | [`meta-llama/Llama-3-8B-Instruct`](https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct) | [`mlx-community/Meta-Llama-3-8B-Instruct-mlx`](https://huggingface.co/mlx-community/Meta-Llama-3-8B-Instruct-mlx) | [`unsloth/llama-3-8b-Instruct-bnb-4bit`](https://huggingface.co/unsloth/llama-3-8b-Instruct-bnb-4bit) | [`unsloth/llama-3-8b-Instruct-GGUF`](https://huggingface.co/unsloth/llama-3-8b-Instruct-GGUF) | Llama 3 Community |
+| **Gemma** | 7B | Text Gen, Chat, Reasoning | [`google/gemma-7b`](https://huggingface.co/google/gemma-7b) | [`google/gemma-7b-it`](https://huggingface.co/google/gemma-7b-it) | [`mlx-community/gemma-7b-it-mlx`](https://huggingface.co/mlx-community/gemma-7b-it-mlx) | [`unsloth/gemma-7b-it-bnb-4bit`](https://huggingface.co/unsloth/gemma-7b-it-bnb-4bit) | [`unsloth/gemma-7b-it-GGUF`](https://huggingface.co/unsloth/gemma-7b-it-GGUF) | Gemma Terms of Use |
+| **Mistral** | 7B | Text Gen, Function Calling | [`mistralai/Mistral-7B-v0.3`](https://huggingface.co/mistralai/Mistral-7B-v0.3) | [`mistralai/Mistral-7B-Instruct-v0.3`](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3) | [`mlx-community/Mistral-7B-Instruct-v0.3-mlx`](https://huggingface.co/mlx-community/Mistral-7B-Instruct-v0.3-mlx) | [`unsloth/mistral-7b-instruct-v0.3-bnb-4bit`](https://huggingface.co/unsloth/mistral-7b-instruct-v0.3-bnb-4bit) | [`unsloth/mistral-7b-instruct-v0.3-GGUF`](https://huggingface.co/unsloth/mistral-7b-instruct-v0.3-GGUF) | Apache 2.0 |
+| **Qwen2** | 7B | Chat, Multilingual, Code | [`Qwen/Qwen2-7B`](https://huggingface.co/Qwen/Qwen2-7B) | [`Qwen/Qwen2-7B-Instruct`](https://huggingface.co/Qwen/Qwen2-7B-Instruct) | [`mlx-community/Qwen2-7B-Instruct-mlx`](https://huggingface.co/mlx-community/Qwen2-7B-Instruct-mlx) | [`unsloth/Qwen2-7B-Instruct-bnb-4bit`](https://huggingface.co/unsloth/Qwen2-7B-Instruct-bnb-4bit) | [`unsloth/Qwen2-7B-Instruct-GGUF`](https://huggingface.co/unsloth/Qwen2-7B-Instruct-GGUF) | Apache 2.0 |
+| **Phi-3** | 3.8B | Text Gen, Chat, Reasoning | N/A | [`microsoft/Phi-3-mini-4k-instruct`](https://huggingface.co/microsoft/Phi-3-mini-4k-instruct) | [`mlx-community/Phi-3-mini-4k-instruct-mlx`](https://huggingface.co/mlx-community/Phi-3-mini-4k-instruct-mlx) | [`unsloth/Phi-3-mini-4k-instruct-bnb-4bit`](https://huggingface.co/unsloth/Phi-3-mini-4k-instruct-bnb-4bit) | [`unsloth/Phi-3-mini-4k-instruct-GGUF`](https://huggingface.co/unsloth/Phi-3-mini-4k-instruct-GGUF) | MIT |
+| **Llama 2** | 7B | Text Gen, Chat | [`meta-llama/Llama-2-7b`](https://huggingface.co/meta-llama/Llama-2-7b) | [`meta-llama/Llama-2-7b-chat-hf`](https://huggingface.co/meta-llama/Llama-2-7b-chat-hf) | [`mlx-community/Llama-2-7b-chat-mlx`](https://huggingface.co/mlx-community/Llama-2-7b-chat-mlx) | [`unsloth/llama-2-7b-chat-bnb-4bit`](https://huggingface.co/unsloth/llama-2-7b-chat-bnb-4bit) | [`unsloth/llama-2-7b-chat-GGUF`](https://huggingface.co/unsloth/llama-2-7b-chat-GGUF) | Llama 2 Community |
+| **TinyLlama**| 1.1B | Chat, Text Gen | [`TinyLlama/...-step-1431k-3T`](https://huggingface.co/TinyLlama/TinyLlama-1.1B-intermediate-step-1431k-3T) | [`TinyLlama/TinyLlama-1.1B-Chat-v1.0`](https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0) | [`mlx-community/TinyLlama-1.1B-Chat-v1.0-mlx`](https://huggingface.co/mlx-community/TinyLlama-1.1B-Chat-v1.0-mlx) | [`unsloth/tinyllama-bnb-4bit`](https://huggingface.co/unsloth/tinyllama-bnb-4bit) | [`unsloth/tinyllama-GGUF`](https://huggingface.co/unsloth/tinyllama-GGUF) | Apache 2.0 |
+
 
 ## 🎧 List of Audio Language Models
 
