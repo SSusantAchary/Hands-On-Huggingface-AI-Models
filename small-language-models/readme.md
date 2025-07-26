@@ -23,6 +23,17 @@ This table summarizes leading open-source models with less than 10 billion param
 | **TinyLlama**| 1.1B | Chat, Text Gen | [`TinyLlama/...-step-1431k-3T`](https://huggingface.co/TinyLlama/TinyLlama-1.1B-intermediate-step-1431k-3T) | [`TinyLlama/TinyLlama-1.1B-Chat-v1.0`](https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0) | [`mlx-community/TinyLlama-1.1B-Chat-v1.0-mlx`](https://huggingface.co/mlx-community/TinyLlama-1.1B-Chat-v1.0-mlx) | [`unsloth/tinyllama-bnb-4bit`](https://huggingface.co/unsloth/tinyllama-bnb-4bit) | [`unsloth/tinyllama-GGUF`](https://huggingface.co/unsloth/tinyllama-GGUF) | Apache 2.0 |
 
 
+## List of Small Mixture of Experts Under - <=16 Billion
+
+| ModelName | Parameter Size | Active parameters | Tasks | Base version | License | Hugging Face Link |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Granite 3.0 MoE** | 3.4B | 0.8B | Text-to-text generation, summarization, classification, extraction, Q&A, RAG, code-related tasks, function-calling, multilingual dialog. | Decoder-only sparse MoE transformer. | Apache 2.0. | [ibm-granite/granite-3.0-3b-a800m-instruct](https://huggingface.co/ibm-granite/granite-3.0-3b-a800m-instruct) |
+| **Phi-tiny-MoE** | 3.8B | 1.1B | General purpose AI systems, memory/compute constrained environments, latency-bound scenarios. | Compressed and distilled from Phi-3.5-MoE and GRIN-MoE using SlimMoE. | MIT License. | [microsoft/Phi-tiny-MoE-instruct](https://huggingface.co/microsoft/Phi-tiny-MoE-instruct) |
+| **OL-MoE** | 7B | 1.3B | Pretraining, Supervised Fine-Tuning (SFT), Direct Preference Optimization (DPO)/Kahneman-Tversky Optimization (KTO). | Mixture-of-Experts LLM. | Apache-2.0. | [allenai/OLMoE-1B-7B-0924](https://huggingface.co/allenai/OLMoE-1B-7B-0924) |
+| **Qwen 1.5 MoE** | 14B | 2.7B | Text generation, response generation, natural language understanding, language modeling, chatbot. | Transformer-based Mixture of Experts architecture. | part of the Qwen1.5 family. | [Qwen/Qwen1.5-MoE-A2.7B](https://huggingface.co/Qwen/Qwen1.5-MoE-A2.7B) |
+| **DeepSeek V2 Lite** | 16B | 2.4B | Text summarization, text generation, natural language understanding, language modeling, chatbot. | Multi-head Latent Attention (MLA) and DeepSeekMoE. | Deepseek. | [deepseek-ai/DeepSeek-V2-Lite](https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite) |
+
+
 ## 🎧 List of Audio Language Models
 
 Below are 10 popular audio language models with their licensing details:
