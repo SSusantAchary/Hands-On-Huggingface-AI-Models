@@ -24,3 +24,28 @@
 | [ImageBind 1.2B](https://huggingface.co/facebook/imagebind-1.2b)<br><sub>facebook/imagebind-1.2b</sub> | Unified audio image text embeddings | transformers | CPU/GPU | 16–32GB | Heavy; requires multi modality inputs | multimodal/multimodal_notebooks/multimodal-20-imagebind-1-2b.ipynb |
 
 _Source of truth: `/meta/notebook_catalog.csv`._
+
+## Reference notebooks
+
+| | Notebook | Link |
+|---|---|---|
+| 🚀 | BLIP image captioning (Salesforce) | [Colab](https://colab.research.google.com/github/salesforce/BLIP/blob/main/notebooks/demo.ipynb) |
+| 🚀 | BLIP-2 (OPT-2.7B) demo | [Colab](https://colab.research.google.com/github/salesforce/LAVIS/blob/main/projects/blip2/eval/blip2_eval_demo.ipynb) |
+| 🖥️ | CLIP retrieval (text↔image) | [GitHub](https://github.com/huggingface/notebooks/blob/main/examples/image_text_retrieval.ipynb) |
+| 🚀 | OWL-ViT open-vocabulary detection | [Colab](https://colab.research.google.com/github/google-research/scenic/blob/main/scenic/projects/owl_vit/notebooks/OWLv2_demo.ipynb) |
+| 🚀 | Qwen2-VL small demo notebook | [Colab](https://colab.research.google.com/github/QwenLM/Qwen2-VL/blob/main/notebooks/Qwen2_VL_Colab_Demo.ipynb) |
+| 🚀 | OpenFlamingo 3B demo | [Colab](https://colab.research.google.com/github/mlfoundations/open_flamingo/blob/main/notebooks/open_flamingo_vqa_demo.ipynb) |
+| 🚀 | LLaVA 1.5 demo (VLM chat) | [Colab](https://colab.research.google.com/github/haotian-liu/LLaVA/blob/main/docs/colab/llava_colab.ipynb) |
+| 🚀 | Kosmos-2 grounding demo | [Colab](https://colab.research.google.com/github/microsoft/unilm/blob/master/kosmos-2/notebooks/Kosmos-2_Demo.ipynb) |
+| 🚀 | Florence-2 multi-task vision-language | [Colab](https://colab.research.google.com/github/microsoft/Florence-2/blob/main/notebooks/florence2_demo.ipynb) |
+| 🚀 | ALBEF retrieval/captioning (LAVIS) | [Colab](https://colab.research.google.com/github/salesforce/LAVIS/blob/main/projects/albef/eval/albef_eval_demo.ipynb) |
+| 🚀 | ImageBind (audio-image-text) demo | [Colab](https://colab.research.google.com/github/facebookresearch/ImageBind/blob/main/notebooks/ImageBind_Demo.ipynb) |
+| 🚀 | CLIP Interrogator (caption from image) | [Colab](https://colab.research.google.com/github/pharmapsychotic/clip-interrogator/blob/main/clip_interrogator.ipynb) |
+| 🚀 | Video-Q&A (Video-LLaVA style) | [Colab](https://colab.research.google.com/github/LanguageBind/Video-LLaVA/blob/main/colab/Video-LLaVA-1.5-7B-colab.ipynb) |
+| 🚀 | Multimodal RAG with CLIP embeddings | [Colab](https://colab.research.google.com/github/huggingface/notebooks/blob/main/examples/multimodal_retrieval.ipynb) |
+| 🚀 | GroundingDINO + SAM pipeline | [Colab](https://colab.research.google.com/github/IDEA-Research/Grounded-Segment-Anything/blob/main/demo/Grounded_Segment_Anything.ipynb) |
+| 🚀 | Pix2Struct (screen-to-text) demo | [Colab](https://colab.research.google.com/github/google-research/pix2struct/blob/main/notebooks/pix2struct_colab_demo.ipynb) |
+| 🚀 | Donut + ViTSTR document VQA | [Colab](https://colab.research.google.com/github/clovaai/donut/blob/master/demo_docvqa.ipynb) |
+| 🚀 | CLAP multimodal audio-text retrieval | [Colab](https://colab.research.google.com/github/LAION-AI/CLAP/blob/main/notebooks/CLAP_demo.ipynb) |
+| 🚀 | BLIP-2 VQA eval (LAVIS) | [Colab](https://colab.research.google.com/github/salesforce/LAVIS/blob/main/projects/blip2/eval/vqa_eval.ipynb) |
+| 🚀 | MiniGPT-4 style demo (open variant) | [Colab](https://colab.research.google.com/github/Vision-CAIR/MiniGPT-4/blob/main/MiniGPT-4.ipynb) |

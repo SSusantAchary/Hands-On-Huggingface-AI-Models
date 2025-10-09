@@ -24,3 +24,28 @@
 | [MMS TTS EN](https://huggingface.co/facebook/mms-tts-eng)<br><sub>facebook/mms-tts-eng</sub> | Multilingual MMS TTS | transformers, torchaudio | CPU/GPU | 8–16GB | License review: MMS; add phoneme note | audio/audio_notebooks/audio-20-mms-tts-en.ipynb |
 
 _Source of truth: `/meta/notebook_catalog.csv`._
+
+## Reference notebooks
+
+| | Notebook | Link |
+|---|---|---|
+| 🖥️ | Whisper tiny/base ASR (HF pipeline) | [GitHub](https://github.com/huggingface/notebooks/blob/main/examples/automatic_speech_recognition.ipynb) |
+| 🚀 | Whisper fine-tuning (English subset) | [Colab](https://colab.research.google.com/github/huggingface/notebooks/blob/main/examples/asr_fine_tuning_whisper.ipynb) |
+| 🖥️ | wav2vec2 ASR (base-960h) | [GitHub](https://github.com/huggingface/notebooks/blob/main/examples/wav2vec2_asr.ipynb) |
+| 🚀 | HuBERT audio classification (SUPERB) | [Colab](https://colab.research.google.com/github/huggingface/notebooks/blob/main/examples/audio_classification_superb.ipynb) |
+| 🚀 | Keyword spotting (Speech Commands) | [Colab](https://colab.research.google.com/github/huggingface/notebooks/blob/main/examples/keyword_spotting.ipynb) |
+| 🚀 | Speaker verification (ECAPA-TDNN, SpeechBrain) | [Colab](https://colab.research.google.com/github/speechbrain/speechbrain/blob/develop/recipes/VoxCeleb/SpeakerRec/SVECAPA.ipynb) |
+| 🚀 | Speaker diarization (pyannote) | [Colab](https://colab.research.google.com/github/pyannote/pyannote-audio/blob/develop/tutorials/diarization_api.ipynb) |
+| 🚀 | Audio emotion recognition (SUPERB ER) | [Colab](https://colab.research.google.com/github/superbbenchmark/superb/blob/master/notebook/SUPERB_ER_demo.ipynb) |
+| 🚀 | TTS (Coqui-TTS basic colab) | [Colab](https://colab.research.google.com/github/coqui-ai/TTS/blob/dev/notebooks/TTS_inference_demo.ipynb) |
+| 🚀 | Voice activity detection (pyannote VAD) | [Colab](https://colab.research.google.com/github/pyannote/pyannote-audio/blob/develop/tutorials/pipeline_demo.ipynb) |
+| 🚀 | WavLM ASR / embeddings demo | [Colab](https://colab.research.google.com/github/microsoft/unilm/blob/master/wavlm/notebooks/WavLM_Demo.ipynb) |
+| 🚀 | XLS-R multilingual ASR | [Colab](https://colab.research.google.com/github/patrickvonplaten/notebooks/blob/master/Fine_tune_XLSR_Wav2Vec2_on_Arabic_ASR_with_Common_Voice.ipynb) |
+| 🚀 | Audio tagging (UrbanSound8K with HF) | [Colab](https://colab.research.google.com/github/sanchit-gandhi/notebooks/blob/main/audio_classification_hf.ipynb) |
+| 🚀 | Streaming ASR with transformers | [Colab](https://colab.research.google.com/github/huggingface/notebooks/blob/main/examples/asr_streaming.ipynb) |
+| 🚀 | Textless NLP (HuBERT units) demo | [Colab](https://colab.research.google.com/github/facebookresearch/textlesslib/blob/main/notebooks/demo.ipynb) |
+| 🚀 | Music tagging with AST | [Colab](https://colab.research.google.com/github/qiuqiangkong/audioset_tagging_cnn/blob/master/colab/ast_audioset_demo.ipynb) |
+| 🚀 | Silero VAD + ASR integration | [Colab](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples/silero_vad_colab.ipynb) |
+| 🚀 | Audio augmentation & features (librosa) | [Colab](https://colab.research.google.com/github/musikalkemist/AudioSignalProcessingForML/blob/master/03-Audio-Data-Augmentation.ipynb) |
+| 🚀 | torchaudio pipeline tutorial | [Colab](https://colab.research.google.com/github/pytorch/tutorials/blob/main/beginner_source/audio_classifier_tutorial.ipynb) |
+| 🚀 | Audio to embeddings (CLAP/LAION) | [Colab](https://colab.research.google.com/github/LAION-AI/CLAP/blob/main/notebooks/CLAP_demo.ipynb) |

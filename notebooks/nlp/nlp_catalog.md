@@ -24,3 +24,28 @@
 | [GTE Base](https://huggingface.co/Alibaba-NLP/gte-base)<br><sub>Alibaba-NLP/gte-base</sub> | Dual-encoder retrieval baseline | transformers | CPU/GPU/MLX | 4–8GB | Normalize embeddings; multilingual ready | nlp/nlp_notebooks/nlp-20-gte-base.ipynb |
 
 _Source of truth: `/meta/notebook_catalog.csv`._
+
+## Reference notebooks
+
+| | Notebook | Link |
+|---|---|---|
+| 🖥️ | Text classification (BERT/DistilBERT, PyTorch) | [GitHub](https://github.com/huggingface/notebooks/blob/main/examples/text_classification.ipynb) |
+| 🚀 | Text classification (TF/Keras) | [Colab](https://colab.research.google.com/github/huggingface/notebooks/blob/main/examples/text_classification-tf.ipynb) |
+| 🖥️ | DistilBERT IMDB fine-tuning (HF Course) | [GitHub](https://github.com/huggingface/course/blob/main/chapter3/classification.ipynb) |
+| 🚀 | RoBERTa sentiment (GLUE SST-2) Trainer | [Colab](https://colab.research.google.com/github/huggingface/notebooks/blob/main/examples/pytorch/quicktour.ipynb) |
+| 🖥️ | Token classification / NER (BERT) | [GitHub](https://github.com/huggingface/notebooks/blob/main/examples/token_classification.ipynb) |
+| 🖥️ | Question answering (SQuAD, BERT) | [GitHub](https://github.com/huggingface/notebooks/blob/main/examples/question_answering.ipynb) |
+| 🖥️ | Summarization (T5/BART) | [GitHub](https://github.com/huggingface/notebooks/blob/main/examples/summarization.ipynb) |
+| 🖥️ | Translation (Marian / Helsinki-NLP) | [GitHub](https://github.com/huggingface/notebooks/blob/main/examples/translation.ipynb) |
+| 🚀 | Instruction-tuned FLAN-T5 generation | [Colab](https://colab.research.google.com/github/huggingface/notebooks/blob/main/examples/text_generation.ipynb) |
+| 🚀 | LoRA/QLoRA with PEFT (sequence classification) | [Colab](https://colab.research.google.com/github/huggingface/notebooks/blob/main/examples/peft/peft_training_text_classification.ipynb) |
+| 🚀 | LoRA/QLoRA for causal-LM (generation) | [Colab](https://colab.research.google.com/github/huggingface/notebooks/blob/main/examples/peft/peft_lora_int8_int4.ipynb) |
+| 🖥️ | Sentence-Transformers semantic search (all-MiniLM) | [Docs](https://www.sbert.net/examples/applications/semantic-search/README.html) |
+| 🖥️ | SBERT multilingual retrieval | [Docs](https://www.sbert.net/examples/applications/semantic-search/semantic_search_ml-qa/README.html) |
+| 🖥️ | bge-* embeddings quickstart | [Docs](https://github.com/FlagOpen/FlagEmbedding/blob/master/docs/text_embedding/quick_start_EN.md) |
+| 🖥️ | e5 embeddings & retrieval | [GitHub](https://github.com/intfloat/e5-mistral-7b-instruct#usage) |
+| 🖥️ | Reranking with mixedbread-ai / Cross-Encoders | [Docs](https://www.sbert.net/examples/applications/cross-encoder/README.html) |
+| 🚀 | DistilBERT QA (Trainer + evaluate) | [Colab](https://colab.research.google.com/github/huggingface/notebooks/blob/main/examples/question_answering-tf.ipynb) |
+| 🚀 | Pipeline zero-shot classification | [Colab](https://colab.research.google.com/github/huggingface/notebooks/blob/main/examples/pipeline_tutorial.ipynb) |
+| 🖥️ | Datasets streaming + tokenization (large corpora) | [GitHub](https://github.com/huggingface/course/blob/main/chapter5/processing.ipynb) |
+| 🖥️ | Evaluate metrics (accuracy/F1/ROUGE) | [GitHub](https://github.com/huggingface/notebooks/blob/main/examples/evaluate.ipynb) |

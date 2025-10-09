@@ -24,3 +24,28 @@
 | [DINOv2 Base](https://huggingface.co/facebook/dinov2-base)<br><sub>facebook/dinov2-base</sub> | Self-supervised feature extractor | transformers | CPU/GPU | 8–16GB | Use for retrieval; MIT license | vision/vision_notebooks/vision-20-dinov2-base.ipynb |
 
 _Source of truth: `/meta/notebook_catalog.csv`._
+
+## Reference notebooks
+
+| | Notebook | Link |
+|---|---|---|
+| 🖥️ | ViT image classification (Imagenette) | [GitHub](https://github.com/huggingface/notebooks/blob/main/examples/image_classification.ipynb) |
+| 🖥️ | CLIP zero-shot classification | [GitHub](https://github.com/huggingface/notebooks/blob/main/examples/zero_shot_image_classification.ipynb) |
+| 🖥️ | CLIP retrieval (text↔image) | [GitHub](https://github.com/huggingface/notebooks/blob/main/examples/image_text_retrieval.ipynb) |
+| 🖥️ | DETR object detection (COCO-style) | [GitHub](https://github.com/huggingface/notebooks/blob/main/examples/object_detection.ipynb) |
+| 🖥️ | SegFormer semantic segmentation | [GitHub](https://github.com/huggingface/notebooks/blob/main/examples/semantic_segmentation.ipynb) |
+| 🚀 | Mask2Former segmentation (HF example) | [Colab](https://colab.research.google.com/github/huggingface/notebooks/blob/main/examples/vision_mask2former.ipynb) |
+| 🚀 | SAM – Segment Anything demo | [Colab](https://colab.research.google.com/github/facebookresearch/segment-anything/blob/main/notebooks/automatic_mask_generator_example.ipynb) |
+| 🚀 | GroundingDINO open-vocabulary detection | [Colab](https://colab.research.google.com/github/IDEA-Research/GroundingDINO/blob/main/demo/GroundingDINO_Demo.ipynb) |
+| 🚀 | TrOCR OCR (printed text) | [Colab](https://colab.research.google.com/github/huggingface/notebooks/blob/main/examples/ocr.ipynb) |
+| 🚀 | Donut document understanding (OCR-free) | [Colab](https://colab.research.google.com/github/clovaai/donut/blob/master/demo.ipynb) |
+| 🚀 | DPT / MiDaS depth estimation | [Colab](https://colab.research.google.com/github/isl-org/MiDaS/blob/master/notebooks/midas.ipynb) |
+| 🚀 | Depth-Anything HF demo notebook | [Colab](https://colab.research.google.com/github/LiheYoung/Depth-Anything/blob/main/notebooks/depth_anything_v2_demo.ipynb) |
+| 🚀 | Pose estimation with MMPose + HF datasets | [Colab](https://colab.research.google.com/github/open-mmlab/mmpose/blob/main/demo/MMPose_Tutorial.ipynb) |
+| 🖥️ | Image feature extraction (ViT as encoder) | [GitHub](https://github.com/huggingface/notebooks/blob/main/examples/image_feature_extraction.ipynb) |
+| 🚀 | BLIP image–text retrieval | [Colab](https://colab.research.google.com/github/salesforce/BLIP/blob/main/notebooks/demo.ipynb) |
+| 🚀 | LayoutLMv3 document layout tasks | [Colab](https://colab.research.google.com/github/huggingface/notebooks/blob/main/examples/layoutlmv3_document_ai.ipynb) |
+| 🚀 | Owl-ViT open-vocabulary detection | [Colab](https://colab.research.google.com/github/google-research/scenic/blob/main/scenic/projects/owl_vit/notebooks/OWLv2_demo.ipynb) |
+| 🚀 | Florence-2 zero-shot vision tasks | [Colab](https://colab.research.google.com/github/microsoft/Florence-2/blob/main/notebooks/florence2_demo.ipynb) |
+| 🚀 | Vision fine-tune with timm + HF | [Colab](https://colab.research.google.com/github/huggingface/notebooks/blob/main/examples/vision_timm_finetune.ipynb) |
+| 🖥️ | Diffusers image generation quickstart | [GitHub](https://github.com/huggingface/notebooks/blob/main/diffusers/stable_diffusion/stable_diffusion_intro.ipynb) |
