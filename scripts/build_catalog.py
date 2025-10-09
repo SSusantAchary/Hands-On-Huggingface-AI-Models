@@ -200,9 +200,10 @@ def build_section_pages(rows: List[Dict[str, str]]) -> Dict[str, str]:
         section_rows = [row for row in rows if row["section"].strip().lower() == sec]
         title = SECTION_LABELS.get(sec, sec.capitalize())
         lines: List[str] = [f"# {title} Notebook Catalog", ""]
-        lines.append("| Model | Use case | Deps | Hardware | RAM | Notes | Notebook |")
-        lines.append("|---|---|---|---|---|---|---|")
-        for row in section_rows:
+        lines.append("| Model | Use case | Deps | Hardware | RAM | Notes | Notebook | Code |")
+        lines.append("|---|---|---|---|---|---|---|---|")
+        references = REFERENCE_LINKS.get(sec, [])
+        for idx, row in enumerate(section_rows):
             model_link = f"https://huggingface.co/{row['model_id']}"
             model_cell = (
                 f"[{row['model_name']}]({model_link})"
@@ -215,21 +216,18 @@ def build_section_pages(rows: List[Dict[str, str]]) -> Dict[str, str]:
             notes = row["notes"].strip() or "—"
             notebook_path = row["notebook_path"].strip()
             notebook_cell = notebook_path if notebook_path and notebook_path != "TODO" else "—"
+            ref = references[idx] if idx < len(references) else None
+            if ref:
+                emoji, title, label, url = ref
+                code_cell = f"{emoji} [{title}]({url})"
+            else:
+                code_cell = "—"
             lines.append(
-                f"| {model_cell} | {use_case} | {deps} | {hardware} | {ram} | {notes} | {notebook_cell} |"
+                f"| {model_cell} | {use_case} | {deps} | {hardware} | {ram} | {notes} | {notebook_cell} | {code_cell} |"
             )
         lines.append("")
         lines.append("_Source of truth: `/meta/notebook_catalog.csv`._")
         lines.append("")
-        references = REFERENCE_LINKS.get(sec, [])
-        if references:
-            lines.append("## Reference notebooks")
-            lines.append("")
-            lines.append("| | Notebook | Link |")
-            lines.append("|---|---|---|")
-            for emoji, title, label, url in references:
-                lines.append(f"| {emoji} | {title} | [{label}]({url}) |")
-            lines.append("")
         pages[sec] = "\n".join(lines)
     return pages
 
