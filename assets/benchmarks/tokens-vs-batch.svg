@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360">
+  <rect width="640" height="360" fill="#0d1117" />
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#58a6ff" font-family="Segoe UI, sans-serif" font-size="24">Tokens/s vs Batch — run notebook to render</text>
+  <text x="50%" y="75%" dominant-baseline="middle" text-anchor="middle" fill="#8b949e" font-family="Segoe UI, sans-serif" font-size="16">Generated from benchmarks/matrix.csv</text>
+</svg>

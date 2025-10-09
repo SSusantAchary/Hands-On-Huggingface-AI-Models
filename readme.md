@@ -1,112 +1,72 @@
-# 🤗 Hands-On HuggingFace AI Models
+<div align="center">
 
-Welcome to **"Hands-On HuggingFace AI Models"**, your go-to repository for exploring, understanding, and leveraging the most popular models from the HuggingFace ecosystem. Whether you're working on NLP, vision, or audio tasks, this repository provides hands-on examples, tutorials, and implementation guides to help you harness the power of HuggingFace models effectively.
+<p><strong>Developer-first, CPU-friendly Hugging Face notebooks with transparent measurements.</strong></p>
 
-## 📊 Bubble Chart Preview
+<p>
+  <a href="/docs/gallery.md" style="padding:12px 20px;margin:4px;display:inline-block;border-radius:8px;background:#1f6feb;color:#fff;text-decoration:none;font-weight:600;">Notebook Gallery</a>
+  <a href="/docs/fixes-and-tips.md" style="padding:12px 20px;margin:4px;display:inline-block;border-radius:8px;background:#0d1117;color:#fff;text-decoration:none;font-weight:600;">Fixes &amp; Tips</a>
+  <a href="/docs/benchmarks.md" style="padding:12px 20px;margin:4px;display:inline-block;border-radius:8px;background:#6f42c1;color:#fff;text-decoration:none;font-weight:600;">Benchmark Highlights</a>
+</p>
 
-> Bubble size = total downloads.  
-> Bubble color = author’s model count bin (<50, 50–99, …, 10k+).
-![Bubble Chart Preview](https://github.com/SSusantAchary/Hands-On-Huggingface-AI-Models/blob/main/media/popolar_authors.png)
+[![GitHub Repo stars](https://img.shields.io/github/stars/SSusantAchary/Hands-On-Huggingface-AI-Models?style=social)](https://github.com/SSusantAchary/Hands-On-Huggingface-AI-Models)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Built with 🤗 Transformers](https://img.shields.io/badge/Built%20with-%F0%9F%A4%97%20Transformers-ff4a9c.svg)](https://huggingface.co/transformers)
 
-## 🚀 Interactive Chart
-
-View the interactive Plotly chart here:  
-[👉 Open Interactive Bubble Chart (HTML)](https://ssusantachary.github.io/Hands-On-Huggingface-AI-Models/floating.html)
-
----
-
-## 📚 Table of Contents
-
-- [Introduction](#introduction)
-- [Model Categories](#model-categories)
-- [Why HuggingFace?](#why-huggingface)
-- [How to Use This Repository](#how-to-use-this-repository)
-- [Popular Models](#popular-models)
-- [Getting Started](#getting-started)
-- [Contributing](#contributing)
-- [License](#license)
+</div>
 
 ---
 
-## 🌟 Introduction
-
-HuggingFace has revolutionized the AI and ML landscape by providing state-of-the-art pre-trained models for a wide variety of tasks, including natural language processing (NLP), computer vision (CV), and audio processing. This repository is dedicated to giving you **hands-on experience** with these models through practical examples, code walkthroughs, and real-world applications.
-
----
-
-## 🏗️ Model Categories
-
-This repository includes tutorials and examples for the following categories of HuggingFace models:
-
-1. **📝 Natural Language Processing (NLP)**  
-   Tasks: Text classification, sentiment analysis, machine translation, summarization, etc.
-2. **🎨 Computer Vision (CV)**  
-   Tasks: Image classification, object detection, segmentation, etc.
-3. **🎧 Audio Processing**  
-   Tasks: Speech recognition, text-to-speech, emotion recognition, etc.
-4. **🧩 Multimodal Models**  
-   Tasks: Text-to-image generation, image captioning, and more.
+**This week** (see `meta/CHANGELOG.md` for details):
+- Gallery kickoff with CPU-first sentiment, ViT Imagenette, and Whisper notebooks.
+- Fix of the Week: Metal backend fallback detects missing MPS and guides to CPU.
+- Mini-benchmark of the Week: CLIP batch-size sweep (tokens/s placeholder until run).
 
 ---
 
-## 🤔 Why HuggingFace?
+### Run Anywhere Pledge
+- CPU is the default path; every notebook runs end-to-end without a GPU.
+- Optional toggles enable Apple Silicon (Metal) or CUDA acceleration when present.
+- Measurements list RAM/VRAM footprints, first-token latency, and throughput per run.
 
-- **Pretrained Models**: Access to thousands of pre-trained models for a variety of tasks.
-- **Ease of Use**: User-friendly APIs for quick integration.
-- **Extensive Library**: Support for cutting-edge transformers, tokenizers, datasets, and pipelines.
-- **Community-Driven**: A thriving community with regular updates and contributions.
-- **Flexible**: Fine-tune models for your custom use cases.
+### What's Inside
+- Curated notebook gallery across NLP, vision, audio, multimodal, and serving tasks.
+- Single-source benchmark matrix (`benchmarks/matrix.csv`) + lightweight charts.
+- Fixes & Tips index (symptom → fix → verify → scope) for common Hugging Face hurdles.
+- MkDocs-powered docs site for quick navigation and sharing.
 
----
-
-## 🛠️ How to Use This Repository
-
-### Structure
-This repository is organized by task and domain:
-- **`nlp/`**: Hands-on examples for NLP models.
-- **`vision/`**: Tutorials for computer vision models.
-- **`audio/`**: Use cases for audio processing models.
-- **`multimodal/`**: Applications of multimodal models.
-
-### Key Features
-- **Beginner-Friendly Tutorials**: Step-by-step instructions with explanations.
-- **Code Examples**: Ready-to-run scripts for different tasks.
-- **Pretrained Models**: Integration with HuggingFace's `transformers` library.
-
----
-
-## 🚀 Popular Models
-
-Below is a list of some popular HuggingFace models included in this repository:
-
-| 🏷️ **Model**            | 🌟 **Task**                          | 📜 **Description**                                  | 🔗 **More Info**                  |
-|--------------------------|---------------------------------------|----------------------------------------------------|------------------------------------|
-| **BERT** 🤖             | NLP: Text classification, QA          | Bidirectional Encoder Representations from Transformers. | [BERT](https://huggingface.co/bert) |
-| **GPT-2** 📝            | NLP: Text generation                 | Generative model for creative text generation.     | [GPT-2](https://huggingface.co/gpt2) |
-| **RoBERTa** 📘          | NLP: Sentiment analysis, QA           | Robustly optimized BERT with better performance.  | [RoBERTa](https://huggingface.co/roberta) |
-| **ViT** 🖼️              | Vision: Image classification          | Vision Transformer for image-based tasks.         | [ViT](https://huggingface.co/google/vit-base-patch16-224) |
-| **Whisper** 🎙️          | Audio: Speech recognition, translation | Multilingual ASR model.                           | [Whisper](https://huggingface.co/openai/whisper-base) |
-| **CLIP** 🖼️ + 📝        | Multimodal: Image-text tasks          | Connects images and text for various tasks.       | [CLIP](https://huggingface.co/openai/clip-vit-base-patch32) |
-| **T5** 📜               | NLP: Translation, summarization       | Text-to-text transformer for versatile NLP tasks. | [T5](https://huggingface.co/t5)    |
-| **DistilBERT** 🌱       | NLP: Lightweight NLP tasks            | Smaller, faster, cheaper, and lighter BERT.       | [DistilBERT](https://huggingface.co/distilbert-base-uncased) |
-| **DALL·E 2** 🎨         | Multimodal: Text-to-image generation   | Generates images from textual descriptions.       | [DALL·E 2](https://openai.com/dall-e-2) |
-| **Wav2Vec 2.0** 🌊      | Audio: Speech recognition             | Self-supervised speech representation model.      | [Wav2Vec 2.0](https://huggingface.co/facebook/wav2vec2-large-960h) |
-
----
-
-## 🏁 Getting Started
-
-### Install Dependencies
-To start using the models, clone this repository and install the required dependencies:
+### Quick Start
 ```bash
 git clone https://github.com/SSusantAchary/Hands-On-Huggingface-AI-Models.git
 cd Hands-On-Huggingface-AI-Models
+python -m venv .venv && source .venv/bin/activate
+pip install -r notebooks/requirements-minimal.txt
 ```
+Open any notebook from `/notebooks` in Jupyter, VS Code, or Colab (badges inside each file).
 
-```bibtex
-@misc{Curious Soul,
-    author       = {S Susant Achary},
-    title        = {🤗 Hands-On HuggingFace AI Models},
-    year         = {2025}
+### Who It's For
+- Practitioners who need reproducible, CPU-safe Hugging Face experiments.
+- Teams validating Metal or CUDA paths without breaking CPU workflows.
+- Contributors adding benchmarks, fixes, or doc polish with low friction.
+
+**Prereqs:** Python ≥3.10, git, and `pip`. GPU/Metal optional.
+
+### Fix of the Week
+- Metal backend fallback detection with CPU guidance – documented in `/fixes-and-tips/metal-backend-fallback.md`.
+
+### Mini-benchmark of the Week
+- CLIP retrieval batch-size sweep scaffolding – see `/docs/benchmarks.md` and run the notebook to populate metrics.
+
+### Cite & License
+```
+@misc{hands-on-hf,
+  author    = {S. Susant Achary},
+  title     = {Hands-On Hugging Face AI Models},
+  year      = {2025},
+  howpublished = {\url{https://github.com/SSusantAchary/Hands-On-Huggingface-AI-Models}}
 }
 ```
+Licensed under the [MIT License](LICENSE).
+
+---
+
+Questions or ideas? Open an issue with labels `notebook`, `fix`, `benchmark`, or `apple-silicon` to help us triage fast.

@@ -1,0 +1,28 @@
+# MkDocs configuration for the developer docs microsite.
+site_name: Hands-On Hugging Face AI Models
+repo_url: https://github.com/SSusantAchary/Hands-On-Huggingface-AI-Models
+repo_name: Hands-On-Huggingface-AI-Models
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.indexes
+    - search.highlight
+    - search.suggest
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/SSusantAchary/Hands-On-Huggingface-AI-Models
+nav:
+  - Home: docs/index.md
+  - Notebook Gallery: docs/gallery.md
+  - Fixes & Tips: docs/fixes-and-tips.md
+  - Benchmark Highlights: docs/benchmarks.md
+markdown_extensions:
+  - admonition
+  - codehilite
+  - pymdownx.details
+  - pymdownx.emoji
+  - pymdownx.superfences
+plugins:
+  - search
