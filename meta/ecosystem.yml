@@ -1,0 +1,30 @@
+last_reviewed: "2025-10-08"
+categories:
+  - name: "Core"
+    rows:
+      - { library: "Transformers", link: "https://huggingface.co/docs/transformers/index", what: "SOTA models across text/vision/audio/multimodal; training & inference", fit: "Model APIs, Trainer, generate()" }
+      - { library: "Datasets", link: "https://huggingface.co/docs/datasets", what: "Stream/load/share datasets at scale", fit: "Data I/O, preprocessing, splits" }
+      - { library: "Tokenizers", link: "https://huggingface.co/docs/tokenizers/index", what: "Fast Rust-backed tokenizers", fit: "Prod tokenization, custom vocab" }
+      - { library: "Evaluate", link: "https://huggingface.co/docs/evaluate/index", what: "Metrics & eval pipelines", fit: "Reproducible metrics" }
+      - { library: "Diffusers", link: "https://huggingface.co/docs/diffusers/index", what: "Diffusion models for images/video/audio", fit: "GenAI imaging/video" }
+  - name: "Training & Post-Training"
+    rows:
+      - { library: "Accelerate", link: "https://huggingface.co/docs/accelerate/index", what: "Device/distributed orchestration", fit: "Multi-GPU/TPU/MPS launch" }
+      - { library: "PEFT", link: "https://huggingface.co/docs/peft/index", what: "LoRA/QLoRA & adapter training", fit: "Parameter-efficient finetuning" }
+      - { library: "TRL", link: "https://huggingface.co/docs/trl/index", what: "SFT, DPO, PPO, RM for LLMs", fit: "Post-training & alignment" }
+      - { library: "DeepSpeed", link: "https://www.deepspeed.ai/", what: "ZeRO + memory-efficient training", fit: "Large-model training via Trainer" }
+      - { library: "Optimum", link: "https://huggingface.co/docs/optimum/index", what: "Hardware-specific speedups", fit: "ONNX, Intel, NVIDIA, AWS Neuron" }
+  - name: "Quant & Memory"
+    rows:
+      - { library: "bitsandbytes", link: "https://github.com/TimDettmers/bitsandbytes", what: "8-bit / 4-bit loading & QLoRA", fit: "Low-VRAM inference/finetune" }
+  - name: "Serving & Deployment"
+    rows:
+      - { library: "Text Generation Inference (TGI)", link: "https://github.com/huggingface/text-generation-inference", what: "High-perf LLM serving", fit: "Prod text-gen endpoints" }
+      - { library: "Text Embeddings Inference (TEI)", link: "https://github.com/huggingface/text-embeddings-inference", what: "High-perf embedding serving", fit: "Retrieval/semantic search" }
+      - { library: "huggingface_hub", link: "https://huggingface.co/docs/huggingface_hub", what: "Programmatic Hub client", fit: "Push/pull models, datasets, Spaces" }
+  - name: "Hub, DataFrames & ETL"
+    rows:
+      - { library: "Hub integrations (Polars/Pandas/DuckDB/Dask/Spark/Daft)", link: "https://huggingface.co/docs/hub/en/extensions", what: "Write/read to Hub repos from tables", fit: "Dataset pipelines & exports" }
+  - name: "Apps & Demos"
+    rows:
+      - { library: "Spaces + Gradio", link: "https://huggingface.co/docs/hub/en/spaces-sdks-gradio", what: "Share interactive demos on the Hub", fit: "UI for notebooks & models" }

@@ -16,6 +16,10 @@ Developer-first notebooks, fixes, and benchmarks that keep CPU paths first-class
   A single benchmark matrix with curated charts for quick comparisons.  
   [:arrow_forward: See Benchmarks](./benchmarks.md)
 
+- :link: **Ecosystem — developer quick picks**  
+  Opinionated library picks that pair well with 🤗 tooling.  
+  [:arrow_forward: Explore Ecosystem](./ecosystem.md)
+
 </div>
 
 ## Why this hub

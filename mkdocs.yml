@@ -17,6 +17,7 @@ nav:
   - Home: docs/index.md
   - Notebook Gallery: docs/gallery.md
   - Fixes & Tips: docs/fixes-and-tips.md
+  - Ecosystem: docs/ecosystem.md
   - Benchmark Highlights: docs/benchmarks.md
 markdown_extensions:
   - admonition
