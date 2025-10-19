@@ -21,6 +21,8 @@
 - [🧩 Hugging Face Ecosystem — Dev Quick Picks](#-hugging-face-ecosystem--dev-quick-picks)
 - [What’s Inside](#whats-inside)
 - [Quick Start](#quick-start)
+- [🧾 Vision OCR Guide](notebooks/vision/OCR_models.md)
+- [🎨 Vision Text-to-Image Guide](notebooks/vision/text2image_models.md)
 
 ## 🧩 Hugging Face Ecosystem — Dev Quick Picks
 <sub>Last reviewed: 2025-10-08</sub>
@@ -77,6 +79,20 @@ python -m venv .venv && source .venv/bin/activate
 pip install -r notebooks/requirements-minimal.txt
 ```
 Open any notebook from `/notebooks` in Jupyter, VS Code, or Colab (badges inside each file).
+
+## 🔍 Vision OCR Highlights
+- 🧾 **Trending models dashboard** → Dive into [Vision OCR Guide](notebooks/vision/OCR_models.md) for the latest `ocr` search snapshot, curated prompts, and resource links.
+- 📒 **Nanonets-OCR2-3B** → Run the official [image2md cookbook](https://github.com/NanoNets/Nanonets-OCR2/blob/main/Nanonets-OCR2-Cookbook/image2md.ipynb) to turn PDFs into structured Markdown.
+- 🪄 **dots.ocr** → Launch the [Colab remote server notebook](https://github.com/rednote-hilab/dots.ocr/blob/master/demo/demo_colab_remote_server.ipynb) for layout-aware parsing with table/formula support.
+- 🌏 **Typhoon-OCR-7B** → Use the bilingual [Colab quick start](https://colab.research.google.com/drive/1z4Fm2BZnKcFIoWuyxzzIIIn8oI2GKl3r?usp=sharing) to process Thai/English documents.
+- 📚 **Manga OCR base** → Follow the CLI [usage guide](https://github.com/kha-white/manga-ocr/blob/master/README.md#usage) for vertical, furigana-rich Japanese text.
+
+## 🎨 Vision Text-to-Image Highlights
+- ⚡ **SD Turbo** → See the [Diffusers quickstart](https://huggingface.co/docs/diffusers/using-diffusers/sd_turbo) for 2–4 step 512² renders; works on 6GB GPUs or 8GB unified VRAM (M-series).
+- 🖼️ **SDXL Base + Refiner** → Use the [SDXL text-to-image Colab](https://colab.research.google.com/github/huggingface/notebooks/blob/main/diffusers_doc/en/pytorch/sdxl.ipynb) for photoreal 1024² generations (≥12GB GPU / 16GB unified).
+- 🌀 **FLUX.1 family** → Try the [FLUX CFG Colab](https://colab.research.google.com/github/huggingface/notebooks/blob/main/diffusers/flux_with_cfg.ipynb) for cinematic looks; expect 16–24GB VRAM or 24GB+ unified memory.
+- 🌐 **Qwen-Image Lightning** → Multilingual prompts via the [Qwen2-Image Space](https://huggingface.co/spaces/Qwen/Qwen2-Image); plan on ≥16GB VRAM or 20GB unified.
+- 🔡 **Stable Diffusion 3 Medium** → Follow the [SD3 pipeline docs](https://huggingface.co/docs/diffusers/api/pipelines/stable_diffusion_3) for better text rendering (≥18GB GPU / 32GB unified).
 
 ## 📒 Notebook Catalog (80 models)
 Developer-ready shortlist of Hugging Face models we plan to ship as notebooks. Full catalog refreshes from `/meta/notebook_catalog.csv`.
