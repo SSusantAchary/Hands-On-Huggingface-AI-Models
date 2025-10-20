@@ -14,6 +14,8 @@
 
 </div>
 
+![State of LLMs September 2025](docs/LLM_Sep_2025.png)
+### Credits- Information is Beautiful
 ---
 
 ### Quick Links
